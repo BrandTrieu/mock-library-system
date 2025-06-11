@@ -1,2 +1,4 @@
 # website-boilerplate-template
-A simple website boilerplate with an HTML, CSS, and JS file that have been linked
+A simple library system mockup to practice the use of objects and constructors in JS
+
+
