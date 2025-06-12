@@ -6,7 +6,7 @@ function Book (title, author, pages, read) {
     this.read = read;
 
     this.info = function () {
-        let readSentence = (read == true) ? "already read" : "not read yet";
+        let readSentence = (this.read == true) ? "already read" : "not read yet";
         return title + " by " + author + ", " + pages + " pages, " + readSentence
     }
 }
@@ -48,6 +48,7 @@ function displayLibrary () {
         readButton.addEventListener("click", function () {
             book.read = !book.read;
             bookCard.textContent = book.info();
+            displayLibrary();
         });
         bookCard.appendChild(readButton);
 
